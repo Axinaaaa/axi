@@ -23,7 +23,7 @@ public class TextCensor {
         // 请求url
         String url = "https://aip.baidubce.com/rest/2.0/solution/v1/text_censor/v2/user_defined";
         try {
-            String param = "text=" + "1阿1";
+            String param = "text=" + "阿1";
 
             // 注意这里仅为了简化编码每一次请求都去获取access_token，线上环境access_token有过期时间， 客户端可自行缓存，过期后重新获取。
             String accessToken = Access_Token.getAuth();
